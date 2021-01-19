@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Testing different display preperties</title>
+  <style media="screen">
+    /** TAG SELECTORS **/
+    p {
+      background-color: red;
+      /* display: inline; */
+      display: inline-block;
+      width: 200px; /* funkar ej med endast inline -- krävs inline-block! */
+    }
+    span {
+      background-color: blue;
+      display: block;
+      width: 200px; /* funkar! */
+    }
+    /** CLASS SELECTORS **/
+    .hidden-paragraph:hover {
+      display: none;
+      /* visibility: hidden; */
+    }
+  </style>
+
+</head>
+
+<body>
+  <p>Hello</p>
+  <p class="hidden-paragraph">my</p>
+  <p>world!</p>
+  <span>Hello again,</span>
+  <span>my</span>
+  <span>world!</span>
+</body>
+
+</html>
